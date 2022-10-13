@@ -1,0 +1,186 @@
+.body{
+    display: flex;
+    height: 60vh;
+}
+
+.left{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    flex:0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div{
+    height: 80%;
+    width: 80%;
+}
+
+.form-div>h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 154%;
+}
+
+.form-div>p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154%;
+}
+
+input{
+    margin: 10px 0;
+    padding: 10px;
+    width: 95%;
+    height: 50px;
+    box-sizing: border-box;
+    background: rgba(250, 136, 50, 0.1);
+    background: #FFFFFF;
+    border: 1px solid rgba(250, 136, 50, 0.46);
+    box-shadow: -2px 2px 12px rgba(250, 136, 50, 0.1);
+    border-radius: 10px;
+}
+
+input:focus{
+    background: rgba(250, 136, 50, 0.1);
+}
+
+textarea{
+    height: 9rem;
+    width: 95%;
+    padding: 10px;
+    resize: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    background: rgba(250, 136, 50, 0.1);
+    background: #FFFFFF;
+    border: 1px solid rgba(250, 136, 50, 0.46);
+    box-shadow: -2px 2px 12px rgba(250, 136, 50, 0.1);
+}
+
+.contact-div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.card{
+    width: 350px;
+    height: 150px;
+    display: flex;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;   
+}
+
+.card-icon{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.3;
+}
+
+.card-content{
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+.submit-div{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.submit-inside{
+    margin: 2rem 0;
+    display: flex;
+}
+
+.submit-inside>.bigButton{
+    padding: 0.5rem 3rem;
+}
+
+
+@media (max-width: 720px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+    }
+
+    .left{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .right{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .simpleButton{
+        font-size: .8rem;
+        font-weight: 400;
+        line-height: 12px;
+        height: 12px;
+        margin: 0 .5rem;
+        padding: 0 .5rem;
+    }
+
+
+    .arrowButton{
+        font-size: .8rem;
+        font-weight: 400;
+        line-height: 12px;
+        height: 12px;
+        margin: 0 .5rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: .5rem;
+    }
+
+
+    .bigButton{
+        background-color: white;
+        border-radius: 10px;
+        color: #FA8832;
+        padding:.5rem 1rem;
+        display: flex;
+        border: 1px solid #FA8832;
+        font-size: 12px;
+    }
+
+    
+    .card{
+        width: 350px;
+        height: 150px;
+        display: flex;
+        border-radius: 10px;
+        font-family: 'Lato', sans-serif;   
+    }
+
+
+    .contact-div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+        align-items: center;
+    }
+
+    
+}

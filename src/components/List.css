@@ -1,0 +1,37 @@
+.List{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+}
+
+.inside-list{
+    margin-left: 4rem;
+    display: flex;
+}
+
+@media (max-width: 720px) {
+    .List{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .inside-list{
+        display: flex;
+        margin-left: 0%;
+        flex-wrap: wrap;
+    }
+
+    .inside-list>.bigButton{
+    font-size: .6rem;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 .5rem;
+    border-radius: 10px;
+    color: #FA8832;
+    padding:.5rem 1rem;
+    display: flex;
+    border: none;
+    }
+}
